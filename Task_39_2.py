@@ -25,9 +25,9 @@ def game(array):
     while not check(array) and count_step < 9:
         for i in [gamer1, gamer2]:
             print(f'Игрок {i}, ваш ход')
-            x = int(input('Введите x координату : '))
-            y = int(input('Введите y координату : '))
-            simb = input('Введите 0 или 1 :  ')
+            x = int(input('Введите y координату : '))
+            y = int(input('Введите x координату : '))
+            simb = input('Введите 0 или X :  ')
             array[x][y] = simb
             output_picture(array)
             if check(array):
